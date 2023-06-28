@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    background: #333333;
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+}
+.left h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+}
+.left span{
+    color: #38bd1e;
+
+}
+.sair{
+    padding: 5px;
+    background: red;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+
+}
+.sair:hover{
+    background: rgb(177, 66, 66);
+}
+.sidebar{
+    position:fixed;
+    width: 250px;
+    height: 100%;
+    margin-top: 70px;
+    padding-top: 30px;
+    left: 0;
+    background: #292929;
+    transition: 0.5s;
+    transition-property: left;
+}
+.sidebar .imagem{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.sidebar h2{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+    margin-top: 0;
+}
+.sidebar a:hover{
+    color: #38bd1e;
+    
+}
+.sidebar ion-icon{
+    padding-right: 10px;
+}
+label #sidebarmenu {
+    z-index: 1;
+    position: fixed;
+    left: 340px;
+    color: #fff;
+    font-size: 25px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property:color;
+}
+label #sidebarmenu:hover{
+    color: #38bd1e;
+}
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+.content {
+    
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    transition: 0.5s;
+    margin-bottom: 70px;
+    margin-left: 0px;
+    
+}
+#check:checked ~ .content{
+    margin-left: 50px;
+}
+#check{
+    display: none;
+}
+
+
+
+
+
+.cabeça {
+    width: 100%;
+    background: linear-gradient(#051107, #19882c);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 72px 0;
+}
+
+.logo-imagem{
+    width: 50px;
+    height: 50px;
+    background: url(WhatsApp\ Image\ 2022-10-21\ at\ 10.29.42.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-texto{
+    margin-left: 20px;
+    color: white;
+}
+.teajudamos {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 27px;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.menu li a{
+    font-size: 24px;
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.menu li a:hover{
+    color:rgb(98, 127, 224);
+    text-decoration:underline;
+}
+
+.meio{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(#bfc5c0, white);
+}
+.materias li{
+    display: inline-block;
+    margin: 20PX 10px;
+    height: 100px;
+    width: 270px;
+    align-items: center;
+    text-align: center;
+    
+
+}
+
+.materias li a{
+    
+    font-size: 20px;
+    color:black;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+
+    
+}
+.materias li a:hover{
+    text-decoration: none;
+    font-size: 20.40px;
+    color: rgb(21, 70, 231);
+}
+
+.fisica {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.fisica img {
+    width: 100%;
+}
+.centrofisica {
+    display: flex;
+    justify-content: center;
+}
+
+.biologia {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.biologia img {
+    width: 100%;
+}
+.centrobiologia{
+    display: flex;
+    justify-content: center;
+}
+.quimica {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.quimica img {
+    width: 100%;
+}
+.centroquimica{
+    display: flex;
+    justify-content: center;
+}
+.ecologia {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.ecologia img {
+    width: 100%;
+}
+.centroecologia{
+    display: flex;
+    justify-content: center;
+}
+
+.geografia {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.geografia img {
+    width: 100%;
+}
+.centrogeografia{
+    display: flex;
+    justify-content: center;
+}
+.historia {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.historia img {
+    width: 70%;
+}
+.centrohistoria {
+    display: flex;
+    justify-content: center;
+}
+.filosofia {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.filosofia img {
+    width: 100%;
+}
+.centrofilosofia{
+    display: flex;
+    justify-content: center;
+}
+.sociologia {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.sociologia img {
+    width: 100%;
+}
+.centrosociologia {
+    display: flex;
+    justify-content: center;
+}
+.gramatica {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.gramatica img {
+    width: 100%;
+}
+.centrogramatica{
+    display: flex;
+    justify-content: center;
+}
+.linguagens {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.linguagens img {
+    width: 100%;
+}
+.centrolinguagens {
+    display: flex;
+    justify-content: center;
+}
+.matematica {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.matematica img {
+    width: 100%;
+}
+.centromatematica {
+    display: flex;
+    justify-content: center;
+}
+.redacao {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.redacao img {
+    width: 100%;
+}
+.centroredacao {
+    display: flex;
+    justify-content: center;
+}
+.cliquenomone{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+}
+footer{
+    height: 200px;
+    margin-top: 70px;
+    text-align: center;
+    text-align-last: center;
+    background: linear-gradient( #19882c,#051107);
+}
+footer img{
+    margin-top: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+footer p{
+    color:#fff
+}

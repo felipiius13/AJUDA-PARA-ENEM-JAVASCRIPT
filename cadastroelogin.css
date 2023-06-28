@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+header{
+    position: fixed;
+    background: #333333;
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+}
+.left h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+}
+.left span{
+    color: #38bd1e;
+
+}
+.sair{
+    padding: 5px;
+    background: red;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+
+}
+.sair:hover{
+    background: rgb(177, 66, 66);
+}
+.sidebar{
+    position:fixed;
+    width: 250px;
+    height: 100%;
+    margin-top: 70px;
+    padding-top: 30px;
+    left: 0;
+    background: #292929;
+    transition: 0.5s;
+    transition-property: left;
+}
+.sidebar .imagem{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.sidebar h2{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+    margin-top: 0;
+}
+.sidebar a:hover{
+    color: #38bd1e;
+    
+}
+.sidebar ion-icon{
+    padding-right: 10px;
+}
+label #sidebarmenu {
+    z-index: 1;
+    position: fixed;
+    left: 340px;
+    color: #fff;
+    font-size: 25px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property:color;
+}
+label #sidebarmenu:hover{
+    color: #38bd1e;
+}
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+.content {
+    
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    transition: 0.5s;
+    margin-bottom: 70px;
+    margin-left: 0px;
+    
+}
+#check:checked ~ .content{
+    margin-left: 50px;
+}
+#check{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background: linear-gradient(90deg, #232323,#082c01);
+    color: #38bd1e;
+    font-weight: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    padding: 100px 300px;
+    padding-bottom: 0;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: linear-gradient(#051107,#38bd1e);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+main .social-media {
+    display: flex;
+    align-content: center;
+}
+
+main .social-media a {
+    text-decoration: none;
+}
+
+main .social-media img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+main .social-media a:first-child img { /*primeiro filho*/
+    margin-left: 0;
+}
+main .alternative {
+    margin-top: 1rem;
+    margin-bottom: 20px;
+}
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #38bd1e;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    background: #161923;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: #38bd1e;
+    font-size: 1rem;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}
+.p6 {
+    margin-top: 0;
+}
+
+.sobree {
+    margin-bottom: 0;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    border: none;
+    border-radius: 5px;
+    background: #161923;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #040B18;
+}
+
+main form input[type="submit"]:hover {
+    background: #333333;
+}
+
+
+.obterresposta {
+    width: 14px;
+    height: 14px;
+    
+}
+
+.segundotitulo {
+    padding: 4px 14px;
+    font-size: 1.5rem;
+    background: #161923;
+    border-radius: 20px;
+    border: 1px solid #040B18;
+}
+
+
+main form img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom:0;
+    border: 3px solid #040B18;
+}
+main form p {
+    margin-bottom: 2rem;
+}
+
+section.images {
+    display: flex;
+    align-items: flex-end;
+}
+
+section.images img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+
+
+/*<img src="WhatsApp Image 2022-10-21 at 10.14.17.jpeg" alt="Mobile">
+                <p>Copyright Sua Melhor Nota - 2022</p>*/
